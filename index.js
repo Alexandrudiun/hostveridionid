@@ -70,7 +70,7 @@ const wordsData = [
 app.use(json());
 
 // GET to provide a random word from the word list
-app.get('/word', (req, res) => {
+app.get('/', (req, res) => {
     try {
         const randomIndex = Math.floor(Math.random() * wordsData.length);
         const randomWord = wordsData[randomIndex];
